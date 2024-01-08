@@ -1,15 +1,15 @@
 # Node.js and MariaDB Project with Docker
 
-Explore a meticulously crafted Node.js application leveraging the Express framework, seamlessly integrated with MariaDB to adeptly handle both GET and POST requests related to tasks. Elevating the development experience, the inclusion of Docker and Docker Compose configurations ensures a fluid containerization process.
+Embark on a journey through a meticulously crafted Node.js application seamlessly integrated with the Express framework, harmoniously coupled with MariaDB. This project adeptly handles both GET and POST requests related to tasks, offering a refined development experience. The inclusion of Docker and Docker Compose configurations ensures a fluid containerization process, making the setup a breeze.
 
 ## Prerequisites
-- Docker installation is required.
-- Ensure Docker Compose is installed.
+- Ensure Docker is installed.
+- Confirm Docker Compose is installed.
 
 ## Application Structure
-- **app/server.js**: Central application file orchestrating the Express setup.
-- **app/db.js**: Configuration hub for the database along with connection pool setup.
-- **app/Dockerfile**: Tailored Dockerfile facilitating containerization.
+- **app/server.js**: The central application file orchestrating the Express setup.
+- **app/db.js**: The configuration hub for the database along with connection pool setup.
+- **app/Dockerfile**: A tailored Dockerfile facilitating containerization.
 - **docker-compose.yml**: Docker Compose configuration streamlining multi-container orchestration.
 - **demo.sql**: Preconfigured SQL commands executed during boot-up for table and user creation.
 
@@ -67,6 +67,11 @@ This Docker Compose configuration seamlessly sets up a Node.js application, a Ma
     ```bash
     docker compose up
     ```
+    or run it in detached mode:
+   ```
+   docker compose up -d
+   ```
+   Detached Mode: Containers run in the background, and the terminal becomes available for further commands without being attached to the container logs.
 
 ## API Endpoints Testing
 
@@ -82,4 +87,15 @@ Creates a new task. Requires a JSON payload with a `description` property.
 
 ```bash
 curl -X POST -d "description=HelloWorld" localhost:8080/tasks
+```
+
+
+## Tear down
+Once you are finished, you can stop the containers:
+```
+docker compose down
+```
+If you wish to delete the volume data to start fresh:
+```
+docker compose down -v
 ```
