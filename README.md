@@ -16,8 +16,9 @@ docker-compose.yml: Docker Compose configuration.
 demo.sql: preset sql commands on boot up to create a table and user.
 
 
+## Diagram
 
-
+![nodejsmariadb](https://github.com/RattyMyles/Node.js-and-MariaDB-Project-with-Docker/assets/9049829/5491e299-dfcd-4778-896b-41892efcfc2c)
 
 
 
