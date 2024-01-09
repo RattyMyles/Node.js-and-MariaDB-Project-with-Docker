@@ -99,3 +99,6 @@ If you wish to delete the volume data to start fresh:
 ```
 docker compose down -v
 ```
+
+## Feedback
+Please do get in touch for any feedback or anything. I'll respond :)
