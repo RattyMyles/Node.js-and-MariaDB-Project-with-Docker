@@ -1,6 +1,10 @@
-# Node.js and MariaDB Project with Docker
+# Node.js Express Docker Template
+This template provides a basic setup for building a Node.js web application using the Express.js framework, and containerized with Docker. It includes a Dockerfile for building a Docker image and a Docker Compose configuration for easy deployment.
 
-Embark on a journey through a meticulously crafted Node.js application seamlessly integrated with the Express framework, harmoniously coupled with MariaDB. This project adeptly handles both GET and POST requests related to tasks, offering a refined development experience. The inclusion of Docker and Docker Compose configurations ensures a fluid containerization process, making the setup a breeze.
+## Features
+Node.js & Express.js: A minimal setup for creating a web server using Node.js with the Express.js framework.
+Dockerized: Utilizes Docker for containerization, enabling consistent and reproducible environments across different systems.
+Docker Compose: Includes a Docker Compose configuration for orchestrating multiple containers, simplifying the deployment process.
 
 ## Prerequisites
 - Ensure Docker is installed.
@@ -9,7 +13,7 @@ Embark on a journey through a meticulously crafted Node.js application seamlessl
 ## Application Structure
 - **app/server.js**: The central application file orchestrating the Express setup.
 - **app/db.js**: The configuration hub for the database along with connection pool setup.
-- **app/Dockerfile**: A tailored Dockerfile facilitating containerization.
+- **Dockerfile**: A tailored Dockerfile facilitating containerization.
 - **docker-compose.yml**: Docker Compose configuration streamlining multi-container orchestration.
 - **demo.sql**: Preconfigured SQL commands executed during boot-up for table and user creation.
 
