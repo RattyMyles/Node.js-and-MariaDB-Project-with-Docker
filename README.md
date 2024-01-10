@@ -2,9 +2,9 @@
 This template provides a basic setup for building a Node.js web application using the Express.js framework, and containerized with Docker. It includes a Dockerfile for building a Docker image and a Docker Compose configuration for easy deployment.
 
 ## Features
-- **Node.js & Express.js: A minimal setup for creating a web server using Node.js with the Express.js framework.
-- **Dockerized: Utilizes Docker for containerization, enabling consistent and reproducible environments across different systems.
-- **Docker Compose: Includes a Docker Compose configuration for orchestrating multiple containers, simplifying the deployment process.
+- **Node.js & Express.js**: A minimal setup for creating a web server using Node.js with the Express.js framework.
+- **Dockerized**: Utilizes Docker for containerization, enabling consistent and reproducible environments across different systems.
+- **Docker Compose**: Includes a Docker Compose configuration for orchestrating multiple containers, simplifying the deployment process.
 
 ## Prerequisites
 - Ensure Docker is installed.
