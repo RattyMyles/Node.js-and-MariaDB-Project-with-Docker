@@ -1,9 +1,12 @@
 const express = require('express')
+const helmet = require('helmet');
 const db = require('./db')
 const app = express()
 const port = 8080
 const bodyParser = require("body-parser");
- 
+
+// Use Helmet!
+app.use(helmet()); 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -18,7 +21,8 @@ app.get('/tasks', async (req, res) => {
         res.send(rows);
         //res.json(resultWithStrings); // Use res.json instead of res.send
     } catch (err) {
-        throw err;
+        console.error(err); // Log the error for internal debugging
+        res.status(500).send('Internal Server Error');
     } finally {
         if (conn) return conn.release();
     }
